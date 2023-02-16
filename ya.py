@@ -7,8 +7,8 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.edge.service import Service as EdgeService
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
-# driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-# driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
 driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
 
 driver.maximize_window()

@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
-ma_cookie = {
+my_cookie = {
     'name': 'cookie_policy',
     'value': '1'
 }
@@ -13,7 +13,7 @@ ma_cookie = {
 
 
 driver.get("http://labirint.ru")
-driver.add_cookie(ma_cookie)
+driver.add_cookie(my_cookie)
 
 driver.refresh()
 
